@@ -6,4 +6,11 @@
     --color-text-secondary: #5b628c;
 
     --color-accent: #7b2eff;
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --container-width: 1400px;
+
+    --transition-default: 0.3s ease;
 }
