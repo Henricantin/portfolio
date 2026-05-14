@@ -1,12 +1,12 @@
 import type { ReactNode } from "react"
 
-import styles from "./index.module.scss";
+import styles from "./mainLayout.module.css";
 
-type mainLayoutProps = {
+type MainLayoutProps = {
     children: ReactNode;
 };
 
-function mainLayout({ children }: mainLayoutProps) {
+function mainLayout({ children }: MainLayoutProps) {
     return (
         <main className={styles.layout}>
             {children}

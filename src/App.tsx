@@ -1,5 +1,13 @@
+import MainLayout from "./layouts/MainLayout";
+
+import Hero from "./sections/hero";
+
 function App() {
-    return <h1>Portfolio</h1>;
+    return (
+        <MainLayout>
+            <Hero />
+        </MainLayout>
+    );
 }
 
 export default App;
