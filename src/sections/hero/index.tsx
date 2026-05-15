@@ -9,8 +9,6 @@ function Hero() {
 				<h1 className={styles.title}>
 					Desenvolvedor <span>Front-end.</span>
 				</h1>
-
-				<div className={styles.scroll}>↓</div>
 			</div>
 		</section>
 	);
