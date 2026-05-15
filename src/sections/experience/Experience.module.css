@@ -1,0 +1,18 @@
+.experience {
+	width: 100%;
+
+	padding: 10rem 0;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+
+	gap: 4rem;
+}
+
+.content h2 {
+	font-size: clamp(3rem, 6vw, 5rem);
+
+	color: var(--color-text-primary);
+}
