@@ -1,0 +1,21 @@
+.about {
+	width: 100%;
+
+	padding: 10rem 0;
+}
+
+.content {
+	max-width: 900px;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem;
+}
+
+.content p {
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	line-height: 1.4;
+
+	color: var(--color-text-primary);
+}
