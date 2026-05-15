@@ -8,7 +8,7 @@ function ExperienceCard() {
 
 				<span className={styles.company}>ICR Assessoria</span>
 
-				<div className={styles.stack}>
+				<div className={styles.techs}>
 					<span>React</span>
 					<span>TypeScript</span>
 					<span>Tailwind CSS</span>
@@ -23,22 +23,6 @@ function ExperienceCard() {
 					React e criação de experiências responsivas focadas em performance e
 					acessibilidade.
 				</p>
-
-				<ul>
-					<li>Desenvolvimento de interfaces reutilizáveis</li>
-
-					<li>Implementação de boas práticas front-end</li>
-
-					<li>Criação de layouts responsivos</li>
-
-					<li>Organização de componentes e arquitetura</li>
-				</ul>
-
-				<div className={styles.techs}>
-					<span>React</span>
-					<span>TypeScript</span>
-					<span>Tailwind CSS</span>
-				</div>
 			</div>
 		</article>
 	);
