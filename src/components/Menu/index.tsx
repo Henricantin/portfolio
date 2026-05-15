@@ -12,18 +12,12 @@ function Menu() {
 	return (
 		<>
 			<button type="button" className={styles.menuButton} onClick={toggleMenu}>
-				MENU
+				<span className={`${styles.menuText} ${isOpen ? styles.active : ""}`}>
+					{isOpen ? "FECHAR" : "MENU"}
+				</span>
 			</button>
 
 			<div className={`${styles.overlay} ${isOpen ? styles.active : ""}`}>
-				<button
-					type="button"
-					className={styles.closeButton}
-					onClick={toggleMenu}
-				>
-					FECHAR
-				</button>
-
 				<nav className={styles.nav}>
 					<button
 						type="button"
