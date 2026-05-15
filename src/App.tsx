@@ -1,6 +1,7 @@
 import Menu from "./components/Menu";
 import MainLayout from "./layouts/MainLayout";
 import About from "./sections/about";
+import Experience from "./sections/experience";
 
 import Hero from "./sections/hero";
 
@@ -11,6 +12,7 @@ function App() {
 
 			<Hero />
 			<About />
+			<Experience />
 		</MainLayout>
 	);
 }
