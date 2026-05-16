@@ -1,3 +1,4 @@
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import styles from "./Contact.module.css";
 
 function Contact() {
@@ -14,19 +15,37 @@ function Contact() {
 					href="mailto:henrique.barrosleo@hotmail.com"
 					className={styles.email}
 				>
-					henrique.barrosleo@hotmail.com
+					<FiMail />
+
+					<span>henrique.barrosleo@hotmail.com</span>
 				</a>
 
 				<div className={styles.links}>
-					<a href="/" target="_blank" rel="noreferrer">
-						LinkedIn
+					<a
+						href="https://www.linkedin.com/in/henriquebl/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<FiLinkedin />
+
+						<span>LinkedIn</span>
 					</a>
 
-					<a href="/" target="_blank" rel="noreferrer">
-						GitHub
+					<a
+						href="https://github.com/Henricantin"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<FiGithub />
+
+						<span>GitHub</span>
 					</a>
 				</div>
 			</div>
+
+			<footer className={styles.footer}>
+				<span>© 2026 Henrique Leonardo. Todos os direitos reservados.</span>
+			</footer>
 		</section>
 	);
 }
