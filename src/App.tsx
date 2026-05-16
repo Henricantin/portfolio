@@ -1,6 +1,7 @@
 import Menu from "./components/Menu";
 import MainLayout from "./layouts/MainLayout";
 import About from "./sections/about";
+import Contact from "./sections/contact";
 import Experience from "./sections/experience";
 
 import Hero from "./sections/hero";
@@ -15,6 +16,7 @@ function App() {
 			<About />
 			<Experience />
 			<Projects />
+			<Contact />
 		</MainLayout>
 	);
 }
