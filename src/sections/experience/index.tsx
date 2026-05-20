@@ -6,7 +6,11 @@ function Experience() {
 	return (
 		<section id="experience" className={styles.experience}>
 			<div className={`container ${styles.content}`}>
-				<h2>Experiência</h2>
+				<div className={styles.header}>
+					<span className={styles.subtitle}>Veja a minha</span>
+
+					<h2>Experiência</h2>
+				</div>
 
 				<ExperienceCard />
 			</div>
