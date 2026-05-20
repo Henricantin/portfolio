@@ -5,11 +5,13 @@ function Contact() {
 	return (
 		<section id="contact" className={styles.contact}>
 			<div className={`container ${styles.content}`}>
-				<span className={styles.label}>
-					Vamos construir algo incrível juntos!
-				</span>
+				<div className={styles.header}>
+					<span className={styles.label}>
+						Vamos construir algo incrível juntos!
+					</span>
 
-				<h2>Entre em Contato</h2>
+					<h2>Entre em Contato</h2>
+				</div>
 
 				<a
 					href="mailto:henrique.barrosleo@hotmail.com"
