@@ -12,6 +12,7 @@ function ExperienceCard() {
 					<span>React</span>
 					<span>TypeScript</span>
 					<span>Tailwind CSS</span>
+					<span>Figma</span>
 				</div>
 			</div>
 
