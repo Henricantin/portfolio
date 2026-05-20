@@ -18,32 +18,36 @@ function About() {
 					<div className={styles.info}>
 						<div className={styles.cards}>
 							<article className={styles.card}>
-								<span>Graduações</span>
+								<span>Stacks principais</span>
 
-								<strong>2+ anos</strong>
-
-								<p>Desenvolvimento Front-end</p>
+								<strong>React, TypeScript, Tailwind & CSS</strong>
 							</article>
 
 							<article className={styles.card}>
-								<span>Stacks</span>
+								<span>Demais conhecimentos</span>
 
-								<strong>React & TypeScript</strong>
-
-								<p>Tailwind CSS</p>
+								<strong>Python & PHP | MySQL | Git | Figma</strong>
 							</article>
 						</div>
 
 						<p className={styles.description}>
-							Desenvolvedor Front-end focado na criação de interfaces modernas,
-							responsivas e acessíveis. Atualmente atuo no desenvolvimento de
-							sistemas internos e aplicações web utilizando React, Angular e
-							TypeScript.
+							Minha carreira em desenvolvimento começou em 2023, quando decidi
+							retornar ao Brasil após uma experiência de trabalho na Irlanda.
+							Desde então, me dedico a evoluir minhas habilidades em
+							desenvolvimento web, com foco em Front-end.
 							<br />
 							<br />
-							Minha experiência internacional na Irlanda ampliou minha
-							comunicação, adaptabilidade e visão profissional, características
-							que hoje aplico no desenvolvimento de produtos digitais.
+							Minha afeição por tecnologia e design me levou a explorar diversas
+							áreas, desde a criação de interfaces intuitivas até a
+							implementação de funcionalidades complexas.
+							<br />
+							<br />
+							Hoje, atuo principalmente com React, TypeScript, Tailwind CSS,
+							sendo responsável por criar páginas web responsivas, interativas e
+							agradáveis aos olhos dos usuários. Creio que minha escolha pela
+							parte visual do mundo Dev se deve à minha antiga paixão no mundo
+							da comunicação, quando tive a oportunidade de me tornar bacharel
+							em Jornalismo, no ano de 2022.
 						</p>
 					</div>
 				</div>
