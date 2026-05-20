@@ -16,3 +16,26 @@
 
 	color: var(--color-text-primary);
 }
+
+.header {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	gap: 1rem;
+
+	text-align: center;
+}
+
+.subtitle {
+	letter-spacing: 0.08rem;
+
+	color: var(--color-text-secondary);
+}
+
+.header h2 {
+	font-size: clamp(3rem, 6vw, 5rem);
+
+	color: var(--color-text-primary);
+}
