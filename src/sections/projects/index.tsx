@@ -30,11 +30,11 @@ function Projects() {
 					/>
 
 					<ProjectCard
-						title="Projeto Three"
-						image="/project-3.jpg"
-						githubUrl="/"
-						liveUrl="/"
-						stack={["React", "TypeScript", "Node.js"]}
+						title="Climatempo"
+						image="src/assets/images/climatempo_project.png"
+						githubUrl="https://github.com/Henricantin/climatempo"
+						// liveUrl="/"
+						stack={["HTML", "JavaScript", "CSS"]}
 					/>
 				</div>
 			</div>

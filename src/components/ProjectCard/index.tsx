@@ -4,7 +4,7 @@ type ProjectCardProps = {
 	title: string;
 	image: string;
 	githubUrl: string;
-	liveUrl: string;
+	liveUrl?: string;
 	stack: string[];
 };
 
@@ -33,9 +33,11 @@ function ProjectCard({
 						GitHub
 					</a>
 
-					<a href={liveUrl} target="_blank" rel="noreferrer">
-						Live Demo
-					</a>
+					{liveUrl && (
+						<a href={liveUrl} target="_blank" rel="noreferrer">
+							Live Demo
+						</a>
+					)}
 				</div>
 			</div>
 		</article>
