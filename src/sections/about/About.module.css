@@ -44,13 +44,13 @@
 }
 
 .imageWrapper img {
-	width: 100%;
+	width: 21rem;
+	height: 21rem;
 
-	border-radius: 32px;
+	border-radius: 50%;
 
 	object-fit: cover;
-
-	filter: grayscale(100%);
+	object-position: center 15%;
 }
 
 .info {

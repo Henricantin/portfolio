@@ -1,3 +1,4 @@
+import aboutPicture from "../../assets/images/about_picture.jpeg";
 import styles from "./About.module.css";
 
 function About() {
@@ -12,7 +13,7 @@ function About() {
 
 				<div className={styles.aboutGrid}>
 					<div className={styles.imageWrapper}>
-						<img src="/profile.jpg" alt="Henrique Leonardo" />
+						<img src={aboutPicture} alt="Henrique Leonardo" />
 					</div>
 
 					<div className={styles.info}>
