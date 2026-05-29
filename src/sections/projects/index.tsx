@@ -13,7 +13,7 @@ function Projects() {
 				</div>
 
 				<div className={styles.grid}>
-					<ProjectCard
+					{/* <ProjectCard
 						title="Projeto One"
 						image="/project-1.jpg"
 						githubUrl="/"
@@ -27,7 +27,7 @@ function Projects() {
 						githubUrl="/"
 						liveUrl="/"
 						stack={["React", "JavaScript", "Vite"]}
-					/>
+					/> */}
 
 					<ProjectCard
 						title="Climatempo"
