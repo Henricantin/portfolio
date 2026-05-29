@@ -14,39 +14,54 @@ function Contact() {
 					<h2>Entre em Contato</h2>
 				</div>
 
-				<div className={styles.links}>
-					<a
-						href="https://wa.me/5511945085959"
-						target="_blank"
-						rel="noreferrer"
-						className={`${styles.card} ${styles.whatsapp}`}
-					>
-						<FaWhatsapp />
+				<div className={styles.contactGrid}>
+					<div className={styles.links}>
+						<a
+							href="https://wa.me/5511945085959"
+							target="_blank"
+							rel="noreferrer"
+							className={`${styles.card} ${styles.whatsapp}`}
+						>
+							<FaWhatsapp />
 
-						<span>WhatsApp</span>
-					</a>
+							<span>WhatsApp</span>
+						</a>
 
-					<a
-						href="https://www.linkedin.com/in/henriquebl/"
-						target="_blank"
-						rel="noreferrer"
-						className={`${styles.card} ${styles.linkedin}`}
-					>
-						<FiLinkedin />
+						<a
+							href="https://www.linkedin.com/in/henriquebl/"
+							target="_blank"
+							rel="noreferrer"
+							className={`${styles.card} ${styles.linkedin}`}
+						>
+							<FiLinkedin />
 
-						<span>LinkedIn</span>
-					</a>
+							<span>LinkedIn</span>
+						</a>
 
-					<a
-						href="https://github.com/Henricantin"
-						target="_blank"
-						rel="noreferrer"
-						className={`${styles.card} ${styles.github}`}
-					>
-						<FiGithub />
+						<a
+							href="https://github.com/Henricantin"
+							target="_blank"
+							rel="noreferrer"
+							className={`${styles.card} ${styles.github}`}
+						>
+							<FiGithub />
 
-						<span>GitHub</span>
-					</a>
+							<span>GitHub</span>
+						</a>
+					</div>
+
+					<form className={styles.form}>
+						<div className={styles.row}>
+							<input type="text" placeholder="Nome" />
+							<input type="email" placeholder="E-mail" />
+						</div>
+
+						<input type="subject" placeholder="Assunto" />
+
+						<textarea placeholder="Mensagem" />
+
+						<button type="submit">Enviar Mensagem</button>
+					</form>
 				</div>
 			</div>
 
