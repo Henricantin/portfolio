@@ -1,4 +1,5 @@
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import styles from "./Contact.module.css";
 
 function Contact() {
@@ -13,20 +14,23 @@ function Contact() {
 					<h2>Entre em Contato</h2>
 				</div>
 
-				<a
-					href="mailto:henrique.barrosleo@hotmail.com"
-					className={styles.email}
-				>
-					<FiMail />
-
-					<span>henrique.barrosleo@hotmail.com</span>
-				</a>
-
 				<div className={styles.links}>
+					<a
+						href="https://wa.me/5511945085959"
+						target="_blank"
+						rel="noreferrer"
+						className={`${styles.card} ${styles.whatsapp}`}
+					>
+						<FaWhatsapp />
+
+						<span>WhatsApp</span>
+					</a>
+
 					<a
 						href="https://www.linkedin.com/in/henriquebl/"
 						target="_blank"
 						rel="noreferrer"
+						className={`${styles.card} ${styles.linkedin}`}
 					>
 						<FiLinkedin />
 
@@ -37,6 +41,7 @@ function Contact() {
 						href="https://github.com/Henricantin"
 						target="_blank"
 						rel="noreferrer"
+						className={`${styles.card} ${styles.github}`}
 					>
 						<FiGithub />
 
