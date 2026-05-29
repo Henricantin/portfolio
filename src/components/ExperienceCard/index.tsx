@@ -20,9 +20,11 @@ function ExperienceCard() {
 				<span className={styles.period}>2026 — Atual</span>
 
 				<p>
-					Desenvolvimento de interfaces modernas, componentização de aplicações
-					React e criação de experiências responsivas focadas em performance e
-					acessibilidade.
+					Construção de interfaces modernas, responsivas e performáticas.
+					Consumo de APIs e integração com back-end. Boas práticas de
+					usabilidade e experiência do usuário. Colaboração com design, através
+					do Figma. Criação de componentes reutilizáveis e manutenção de código
+					limpo.
 				</p>
 			</div>
 		</article>
