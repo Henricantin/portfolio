@@ -1,8 +1,22 @@
+import emailjs from "@emailjs/browser";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import styles from "./Contact.module.css";
 
 function Contact() {
+	function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+		event.preventDefault();
+
+		emailjs.sendForm(
+			import.meta.env.VITE_EMAILJS_SERVICE_ID,
+			import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+			event.currentTarget,
+			import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+		);
+
+		event.currentTarget.reset();
+	}
+
 	return (
 		<section id="contact" className={styles.contact}>
 			<div className={`container ${styles.content}`}>
@@ -50,15 +64,15 @@ function Contact() {
 						</a>
 					</div>
 
-					<form className={styles.form}>
+					<form className={styles.form} onSubmit={handleSubmit}>
 						<div className={styles.row}>
-							<input type="text" placeholder="Nome" />
-							<input type="email" placeholder="E-mail" />
+							<input type="text" name="name" placeholder="Nome" />
+							<input type="email" name="email" placeholder="E-mail" />
 						</div>
 
-						<input type="subject" placeholder="Assunto" />
+						<input type="subject" name="subject" placeholder="Assunto" />
 
-						<textarea placeholder="Mensagem" />
+						<textarea name="message" placeholder="Mensagem" />
 
 						<button type="submit">Enviar Mensagem</button>
 					</form>
