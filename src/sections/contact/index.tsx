@@ -1,20 +1,40 @@
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import styles from "./Contact.module.css";
 
 function Contact() {
-	function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+	const [isSending, setIsSending] = useState(false);
+
+	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault();
 
-		emailjs.sendForm(
-			import.meta.env.VITE_EMAILJS_SERVICE_ID,
-			import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-			event.currentTarget,
-			import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-		);
+		const form = event.currentTarget;
 
-		event.currentTarget.reset();
+		try {
+			setIsSending(true);
+
+			const response = await emailjs.sendForm(
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				form,
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+			);
+
+			if (response.status === 200) {
+				toast.success("E-mail enviado com sucesso!");
+
+				form.reset();
+			}
+		} catch (error) {
+			console.error(error);
+
+			toast.error("Não foi possível enviar o e-mail.");
+		} finally {
+			setIsSending(false);
+		}
 	}
 
 	return (
@@ -74,7 +94,9 @@ function Contact() {
 
 						<textarea name="message" placeholder="Mensagem" />
 
-						<button type="submit">Enviar Mensagem</button>
+						<button type="submit" disabled={isSending}>
+							{isSending ? "Enviando..." : "Enviar mensagem"}
+						</button>
 					</form>
 				</div>
 			</div>
