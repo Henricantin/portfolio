@@ -1,3 +1,4 @@
+import climatempoProject from "../../assets/images/climatempo_project.png";
 import ProjectCard from "../../components/ProjectCard";
 
 import styles from "./Projects.module.css";
@@ -31,7 +32,7 @@ function Projects() {
 
 					<ProjectCard
 						title="Climatempo"
-						image="src/assets/images/climatempo_project.png"
+						image={climatempoProject}
 						githubUrl="https://github.com/Henricantin/climatempo"
 						// liveUrl="/"
 						stack={["HTML", "JavaScript", "CSS"]}
