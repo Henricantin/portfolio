@@ -1,17 +1,13 @@
-import type { ReactNode } from "react"
+import type { ReactNode } from "react";
 
-import styles from "./mainLayout.module.css";
+import styles from "./MainLayout.module.css";
 
 type MainLayoutProps = {
-    children: ReactNode;
+	children: ReactNode;
 };
 
-function mainLayout({ children }: MainLayoutProps) {
-    return (
-        <main className={styles.layout}>
-            {children}
-        </main>
-    )
+function MainLayout({ children }: MainLayoutProps) {
+	return <main className={styles.layout}>{children}</main>;
 }
 
-export default mainLayout;
+export default MainLayout;
