@@ -21,13 +21,13 @@ function About() {
 							<article className={styles.card}>
 								<span>Stacks principais</span>
 
-								<strong>ReactJS, TypeScript, Tailwind CSS & Figma</strong>
+								<strong>ReactJS, TypeScript & Tailwind CSS</strong>
 							</article>
 
 							<article className={styles.card}>
 								<span>Demais conhecimentos</span>
 
-								<strong>Python & PHP | MySQL</strong>
+								<strong>Java, Python & PHP | MySQL & Figma</strong>
 							</article>
 						</div>
 
