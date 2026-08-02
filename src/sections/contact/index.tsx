@@ -102,7 +102,7 @@ function Contact() {
 			</div>
 
 			<footer className={styles.footer}>
-				<span>© 2026 Henrique Leonardo. Todos os direitos reservados.</span>
+				<span>© 2026 Henricantin. Todos os direitos reservados.</span>
 			</footer>
 		</section>
 	);
